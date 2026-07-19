@@ -33,11 +33,31 @@ Le script est conçu pour être facile d'utilisation avec des raccourcis à la r
 
 1. Placez vos images source ou vos fichiers PDF dans le dossier `images/`.
 
-### Lancement
+### Lancement via les scripts raccourcis (Recommandé)
 
-Lancez l'un des scripts raccourcis créés à la racine du projet :
-- **Linux / macOS / WSL** : `bash run.sh`
-- **Windows** : `.\run.bat`
+Ces scripts s'occupent d'activer l'environnement virtuel pour vous :
+
+- **Linux / macOS / WSL** :
+  ```bash
+  bash run.sh
+  ```
+
+- **Windows** :
+  ```cmd
+  .\run.bat
+  ```
+
+### Lancement manuel (Bash classique)
+
+Si vous préférez lancer l'outil vous-même, sans utiliser les scripts raccourcis :
+
+```bash
+# Activation de l'environnement
+source .venv/bin/activate
+
+# Lancement du script principal
+python main.py
+```
 
 L'application listera automatiquement les fichiers présents dans le dossier `images/` et vous demandera :
 1. **Le numéro du fichier** que vous souhaitez traiter.
