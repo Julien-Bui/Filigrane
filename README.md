@@ -65,7 +65,3 @@ L'application listera automatiquement les fichiers présents dans le dossier `im
 3. **Le fichier de sortie** : le nom du document PDF final (facultatif, par défaut le même nom que le fichier source).
 
 Le fichier final protégé sera alors généré dans le dossier `res/` !
-
-> [!WARNING]
-> **Important : Compatibilité Adobe Acrobat**
-> En raison des techniques de calques utilisées pour incruster le filigrane, il est déconseillé d'ouvrir le fichier PDF de sortie avec le logiciel Adobe Acrobat (qui peut parfois le bloquer ou le considérer comme corrompu). Privilégiez n'importe quel autre lecteur PDF standard (Aperçu sur Mac, votre navigateur web Chrome/Edge/Firefox, etc.).
