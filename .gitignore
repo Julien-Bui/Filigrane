@@ -1,0 +1,21 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+
+# Dossier de résultats (on ignore tout sauf le .gitkeep pour préserver la structure)
+res/*
+!res/.gitkeep
+
+# Dossier d'images source (facultatif: décommentez la ligne ci-dessous si vous ne voulez pas versionner vos images persos)
+# images/*
+# !images/.gitkeep

@@ -1,0 +1,47 @@
+# Image & PDF Watermarker
+
+Un utilitaire Python autonome et robuste pour transformer n'importe quelle image ou document PDF en y appliquant un filigrane textuel personnalisé. 
+
+## Fonctionnalités
+
+- **Agnostique au format d'entrée** : Supporte les documents PDF ainsi que les images (PNG, JPEG, WEBP, BMP, etc.).
+- **Filigrane Répété (Motif)** : Le texte est automatiquement répété en diagonale pour couvrir l'intégralité de la page ou de l'image (motif en quinconce).
+- **Taille de Police Adaptative** : La taille du texte du filigrane s'adapte intelligemment à la longueur de votre phrase pour que tout reste lisible et esthétique.
+- **Conversion PDF Standard** : Génère un fichier `.pdf` standardisé, utilisant les librairies industrielles de référence (`pypdf` + `reportlab`) pour garantir une compatibilité maximale.
+- **Structure Claire** : Dossier d'entrée (`images/`) et dossier de sortie (`res/`) pour garder votre espace de travail propre.
+
+## Installation
+
+1. Clonez ce dépôt.
+2. Créez un environnement virtuel pour isoler les dépendances :
+   ```bash
+   python -m venv .venv
+   ```
+3. Activez l'environnement virtuel :
+   - **Linux/macOS** : `source .venv/bin/activate`
+   - **Windows** : `.\.venv\Scripts\activate`
+4. Installez les dépendances requises :
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Utilisation
+
+Le script est conçu pour être facile d'utilisation avec des raccourcis à la racine.
+
+### Préparation
+
+1. Placez vos images source ou vos fichiers PDF dans le dossier `images/`.
+
+### Lancement
+
+Lancez l'un des scripts raccourcis créés à la racine du projet :
+- **Linux / macOS / WSL** : `bash run.sh`
+- **Windows** : `.\run.bat`
+
+L'application listera automatiquement les fichiers présents dans le dossier `images/` et vous demandera :
+1. **Le numéro du fichier** que vous souhaitez traiter.
+2. **Le texte** : le message à afficher en filigrane (ex: "CONFIDENTIEL", "Copie", etc.).
+3. **Le fichier de sortie** : le nom du document PDF final (facultatif, par défaut le même nom que le fichier source).
+
+Le fichier final protégé sera alors généré dans le dossier `res/` !
